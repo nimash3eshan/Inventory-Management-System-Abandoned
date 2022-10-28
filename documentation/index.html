@@ -1,0 +1,502 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head> 
+	<meta charset="utf-8">
+	
+	<title>Flexible POS | Flexible-POS Documentation</title>
+	
+	<meta name="description" content="Hi there, thank you for purchasing this software. If you have any questions that are beyond the scope of this documentation, please feel free to contact me via the comment section or email me at &#109;&#97;&#105;&#109;&#97;&#105;&#114;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109; Thanks.">
+	<meta name="author" content="Najmul Hossain & MD Tajmul">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="copyright" content="ITsolution24">
+	<meta name="generator" content="Documenter v1.0 http://rxa.li/documenter">
+	<meta name="date" content="2017-10-30T00:00:00+06:00">
+	
+	<link rel=icon href="assets/images/favicon.png">
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/css/custom.css" media="screen">
+
+	<script src="assets/js/jquery.3.3.1.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<script src="assets/js/jquery.easing.js"></script>
+	
+    <!-- Syntax Highlighter -->
+    <script type="text/javascript" src="assets/js/prettify/prettify.js"></script>
+    <link rel="stylesheet" href="assets/js/prettify/themes/theme-balupton.css" media="screen" />
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;background-repeat:repeat;background-attachment:scroll;}
+		::-moz-selection{background:#333636;color:#C5D52B;}
+		::selection{background:#333636;color:#C5D52B;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/logo.png);}
+		a{color:#008C9E;}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#1f2d30;color:#FFFFFF;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ol{border-top:1px solid #212424;}
+		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;text-align:left;padding-left:10px;}
+		#documenter_sidebar ol a:hover{background:#333636;color:#C5D52B;border-top:1px solid #333636;}
+		#documenter_sidebar ol a.current{background:#333636;color:#C5D52B;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		#documenter_content .no-margin{
+			margin:0 0;
+		}
+		.vimportant{
+			color:red;
+			font-weight: bold;
+			font-size:28px!important;
+		}
+	</style>
+	<script src="https://use.fontawesome.com/a3b96ba6a7.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+		    <li class="page-scroll">
+				<a href="#overview">
+					<i class="fa fa-angellist margin"></i>
+					Overview
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#installation">
+					<i class="fa fa-android margin"></i>
+					Installation
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#setting">
+					<i class="fa fa-gear margin"></i>
+					Setting 
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#dashboard">
+					<i class="fa fa-home margin"></i>
+					Dashboard
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#customer">
+					<i class="fa fa-shopping-cart margin"></i>
+					Customer
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#stocks">
+					<i class="fa fa-print margin"></i>
+					Stocks
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#supplier">
+					<i class="fa fa-users margin"></i>
+					Suppliers 
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#purchase">
+					<i class="fa fa-star margin"></i>
+					Purchases
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#intstallment">
+					<i class="fa fa-print margin"></i>
+					Sales
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#accounts">
+					<i class="fa fa-users margin"></i>
+					Accounts
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#expense">
+					<i class="fa fa-star margin"></i>
+					Expense
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#reports">
+					<i class="fa fa-star margin"></i>
+					Reports 
+				</a>
+			</li>
+			<li class="page-scroll">
+				<a href="#updates">
+					<i class="fa fa-star margin"></i>
+					Updates 
+				</a>
+			</li>
+		</ol>
+		<div id="documenter_copyright">
+		made with the <a href="http://rxa.li/documenter">Documenter v2.1</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+
+
+<div class="container-fluid">	
+<!-- overview start -->
+
+<section id="overview">
+	<h1 style="font-size:35px">Flexible POS - Point of Sale with Stock Management System</h1>
+	<h4>Thanks for purchasing</h4>
+	<p>Hi Please read the documentation properly If you have any questions that are beyond the scope of this documentation, please feel free to contact us via the comment section on codecanyon.net or email us at <span style="background-color: yellow">flexibledesign@gmail.com</span></p>
+	<h3>Our support working hours are listed in GMT+6 below:</h3>
+		<p>► Saturday to Thursday : 9:00 AM to 5:00 PM</p>
+		<p>► Response time Upto 2 days.</p>
+	<h3>Overview</h3>
+	<ul>
+		 <li> If you want to  store all data in your computer so You can use XAMPP or wamp for Windows Operating System and MAMP For Mac operating system</li>
+		 <li> If you want to store all data on the internet so <a href="https://flexibleit.net/contact.php" target="_blank">contact us</a> we will set up everything quickly.
+		 </li>
+		<h4 style="margin-left:40px;">Advantage of using internet for data store</h4>
+		 <ul>
+		 	<li> Your all data will be 100% secured if your computer doesn't work or damage.</li>
+		 	<li> You can see all information from everywhere about your shop.</li>
+		 	<li> You can see all information by using your Mobile phone.</li>
+		 	<li> You can monitor your shop from home.</li>
+		 </ul>
+	</ul>
+</section>
+<!-- overview end -->
+
+<!-- installation part start -->
+<section id="installation">
+	<h1>Installation Process</h1><hr class="notop">
+	<h3>Pre-Requirements</h3>
+	<ul>
+		<li class="vimportant">Create a new database , Make sure database is completely blank.</li>
+		<li>The maximum execution time of your server can't be less than 5 minutes. You may update php.ini file for this</li>
+		<li>To get Installation service from our Expert Support Team contact us at flexibledesign01@gmail.com </li>
+	</ul>
+	<p>You have to follow this article carefully</p>
+	<h3>1st : Install a software according your Operating System</h3>
+	<h4>Installation of WAMP for Windows</h4>
+	<ul>
+		<li><a href="https://sourceforge.net/projects/wampserver/files/latest/download" target="_blank">Downlaod</a> and install WAMP software in your computer</li>
+		<li>Go to c: drive > WAMP folder> www folder > paste FlexiblePos folder(This you will get in our package). </li>
+		<li>Run WAMP software</li>
+	</ul>
+
+	<h4>Installation of XAMPP for Windows</h4>
+	<ul>
+		<li><a href="https://sourceforge.net/projects/xampp/files/latest/download" target="_blank">Download</a> and <a href="https://premium.wpmudev.org/blog/setting-up-xampp/" target="_blank">install</a>  XAMPP software in your computer</li>
+		<li>Go to c: drive >XAMPP folder> htdocs folder > paste FlexiblePos folder(This you will get in our package). </li>
+		<li>Run XAMPP software and start Apache and MySQL from XAMPP control panel</li>
+	</ul>
+
+
+	<h4>Installation of MAMP for MAC</h4>
+	<ul>
+		<li>Go to the <a href="https://sourceforge.net/projects/mamp/files/latest/download">link </a> and download MAMP. Once the download is finished, open the downloaded file. Drag and drop the image file inside it to your Applications folder. </li>
+
+		<li>Paste FlexiblePos folder (This you will get in our package) your MAMP document root folder </li>
+		<li>Run MAMP</li>
+	</ul>
+	<h4>Installation of LAMP for Linux</h4>
+	<ul>		https://sourceforge.net/directory/?q=lamp%20server
+		<li>Go to the <a href="https://bitnami.com/redirect/to/583992/bitnami-lampstack-7.2.19-2-linux-x64-installer.run">link</a>  and download LAMP. Once the download is finished install it. </li>
+
+		<li>Paste FlexiblePos folder (This you will get in our package) your LAMP document root folder </li>
+		<li>Run LAMP</li>
+	</ul>
+
+	<h3>2nd : Follow this step</h3>
+	<ul>
+		
+		<li>Go to your project directory and follow the steps
+			<img src="assets/images/install1.jpg" alt="">
+		</li>
+		<li><em>If you use linux or other os, you must need to give the 3 folders permission to 775 (For windows you need not to do this). These are</em>
+			<img src="assets/images/install3.jpg" alt="">
+		</li>
+		<li>You Can Give permission easily by right clicking the folder.<br>
+			<img src="assets/images/permission1.jpg" alt="">
+			<img src="assets/images/permission2.jpg" alt="">
+		</li>
+		<li><em>You must need to write the database name, database user, database user password, codecanyon username and codecanyone purchase code. Click on submit to complete. This step will take few minutes, please wait untill complete.</em>
+			<img src="assets/images/install4.png" alt="">
+		</li>
+		
+		<li>After successful installation you will be redirected to login page. Here you will get Login form, where you can login with user: <b>admin@flexibleit.net</b> pass: <b>password</b>.
+			<img src="assets/images/login.jpg" alt="">
+		</li>
+		<li>Visit  http://YOURDOMAIN.COM/( if you install it on online server). If you install sub directory then the directory is http://YOURDOMAIN.COM/subdirectory.
+		</li>
+		<li>After Login You need to setup the Initial Settings for your software.</li>
+	</ul>
+	<p style="background-color:yellow;padding: 15px"><strong>Important:</strong>if you want to install this application inside custom directory/folder then go to config.php file at line number 61 and change the value of SUBDIRECTORY constant with your custom directory/folder name.</p>
+</section>
+<!-- installation part end -->
+
+<!-- setting part start -->
+<section id="setting">
+	<h1>Setting</h1><hr class="notop">
+	<p class="text-danger">**Before starting your application, you must need to setup the initial settings of your application.**</p>	
+	<p>Here you will be able to set currency, set previous balance, change company logo, company address, company name, language and user preference and many things.</p>
+	<img src="assets/images/setting.jpg" alt="">
+	
+</section>
+<!-- setting part end -->
+
+<!--Dashboard part start-->
+<section id="dashboard">
+	<h1>Dashboard</h1>
+	<p>This is the informative Dashboard, From here you will be able to do many work very easily</p>
+	<ul>
+		<li>Have a look at our awesome Dashboard.</li>
+		<li>You will get sales/invoices and purchases/receivings in graph, how many sales and purchases you make in last 15 days</li>
+		<li>You will get stock alerts and expired products list here.</li>
+		<li>You will get your bank account summary here.</li>
+		<li>It will help you to show you about all the info's at a galance. You can see the numbers of employees, customers, suppliers, Latest Incomes, Latest expenses, Expences, Items etc. in a look. </li>
+	</ul>
+	<img class="img-responsive" src="assets/images/dashboard.png">
+	
+</section>
+<!--Dashboard part end-->
+
+
+<!-- POS part start -->
+<section id="customer">
+	<h1>Customer</h1> 
+	<h3>Customer List</h3><hr class="notop">
+	<img src="assets/images/add-customer.png">
+	<h3>Add customer</h3><hr class="notop">
+	<ul>
+		<li> Click to the <button class="btn btn-info">New customer</button> on the right corner.</li>
+		<li> Provide all the necessary informations and click to the submit.</li>
+		<li> Your will see the customer in the customer dashbord. You can edit them also.</li>
+		<li>For watching the customer details just click on <button class="btn btn-success">View Profile</button></li>
+	</ul>
+</section>
+<!-- POS part end -->
+
+<!-- stocks part start -->
+<section id="stocks">
+	<h1>Stocks</h1> 
+	<h3>Stocks</h3><hr class="notop">
+	<p>In this section, you will be able to see all items, total stocks, inventory in your current store.</p>
+	<img src="assets/images/item_list.png">
+	<ul>
+		<li> Here you will be able to add more product to the stocks.</li>
+		<li> For adding product Click on the <button class="btn btn-info">New Item</button> on the right corner.</li>
+		<li> Provide all the necessary informations and submit.</li>
+		<li> You can edit them after as when as you need to change.</li> 
+		<li> For inventory Click on the <button class="btn btn-info">inventory</button> on the dropdown of the item.</li>
+	</ul>
+
+
+</section>
+<!-- sell part end -->
+
+
+<!-- installment area start -->
+<section id="supplier">
+	<h1>Supliers</h1> 
+	<p>From here you can manage your Suppliers.</p>
+
+	<h3>Create supplier make a list of your suppliers.</h3><hr class="notop">
+	<img src="assets/images/suppliers.png">
+	<ul>
+		<li>Click on the New supplier</li> 
+		<li>Fill up the requirements and submit.</li> 
+		<li>You can edit them</li> 
+		<li>For watching the customer details just click on <button class="btn btn-success">View Profile</button></li>
+		<li> You able to paid dues to your supplier from dropdown <button class="btn btn-success">payment</button> button of purchases or directly with <button class="btn btn-success">Add Payment</button> button.</li>
+	</ul>
+		
+</section>
+<!-- installment area End -->
+
+<!-- purchase part start -->
+<section id="purchase">
+	<h1>Receivings/Purchase</h1><hr class="notop">
+
+	<p>In this section you will be to able to see lot of information about purchase product(that you were bought from supplier).</p>
+
+	<h3>Purchase List</h3>
+	<ul>
+		<li> Dashboard > Purchase > Purchase List > Here you will get all list of your purchases from supplier.</li>
+		<li> You able to paid dues to your supplier from dropdown <button class="btn btn-success">payment</button> button of purchases.</li>
+		<li> To get another day invoice you need to click on search icon from Topbar.</li>
+	</ul>
+
+</section>
+<!-- parchase part end -->
+
+<!-- product transder part start -->
+<section id="sales">
+	<h1>Sales/Invoice</h1> 
+	<p>In this section, you will be able to create sales/invoice.</p>
+	<h3>Create Sales/Invoice</h3><hr class="notop">
+	
+	<ul>
+		<li> Go to Dashboard > Sales > Add Sales/Invoice</li>
+		<li> You can select product easily with thee left product bar, type the product name, then you will get the product suggestion, you can add the product by clicking on arrow button.</li>
+		<li> Select a customer if permanent</li>
+		<li> Select a payment type.</li>
+		<li> You can see the total product price in subtotal field.</li> 
+		<li> You can add payment in the payment field.</li> 
+		<li> You can add discount in percentage or flat.</li> 
+		<li> For complete the sale/invoice click on Complete button.</li> 
+		<li>After clicking complete button you can see the print page. You can print it by clicking on print button.</li>
+	</ul>
+	<img src="assets/images/create_sale.png" alt="">
+	<h3>Edit Sales/Invoice</h3><hr class="notop">
+	<ul>
+		<li> You can edit sales and you can add more products and payment</li>
+		<li> Can change customers</li>
+	</ul>
+	<h3>Hold Sales/Invoice</h3><hr class="notop">
+	<ul>
+		<li> You can Hold sales temporary</li>
+		<li> Can edit the sales later and confirm</li>
+	</ul>
+</section>
+<!-- product transfer part end -->
+
+
+<!--product part start-->
+<section id="accounts">
+	<h1>Accounts</h1><hr class="notop">
+	<p>You can add your bank accounts with this option. If you want to keep your account details.</p>
+
+	<h3>Transactions</h3>
+	<p>You can transfer balance from one account to another.</p>
+
+	<img src="assets/images/accounts.png" alt="">
+</section>
+<!--product part End-->
+
+
+
+<!--customer part start-->
+<section id="expense">
+	<h1>Expense</h1>
+	<p>Here you can manage your expenses very easily. You will be able to see expense history.</p>
+
+	<h3>Create New Expense</h3><hr class="notop">
+	<ul>
+		<li> Dashboard  > Expense > fill up the form under "Add New Expense" with valid information > save</li>
+		<li> After successfully creating a new expense will be shown under the "Expense List" section.</li>
+		<li> You can add expense category. Add expense with this category.</li>
+	</ul>
+	<img src="assets/images/expense.png" alt="">
+</section>
+<!--customer part End-->
+<!--supplier part start-->
+<section id="reports">
+	<h1>Reports</h1>
+
+	<p>In this report section you will get income report, expense report daily and monthly and daily report, daily report summary.</p>
+
+	<h3>Income Report</h3>
+	<ul>
+		<li> You will get income report in Dashboard > reports > income report</li>
+		<li> Select all reports of a month select month and year.</li>
+		<li> For getting monthly report generally.</li>
+	</ul>
+
+	<h3>Expense Report</h3>
+	<ul>
+		<li> You will get income report in Dashboard > reports > expense report</li>
+		<li> Select all reports of a month select month and year.</li>
+		<li> For getting monthly report generally.</li>
+	</ul>
+
+	<h3>Daily Report</h3>
+	<ul>
+		<li> You will get details of daily debit credit in the Dashboard > reports > Daily report</li>
+		<li> You can get date wise result by selecting a date in the dropdown</li>
+		<li> You will get the final balance of the day.</li>
+		<li> ***You should close a daily report to get report summary correctly.</li>
+	</ul>
+	<h3>Report Summary</h3>
+	<ul>
+		<li> You will get daily report summary in Dashboard > Supplier > daily report summary</li>
+		<li> You can delete a report summary.</li>
+	</ul>
+</section>
+<!--supplier part end-->
+
+	<!-- cretit start -->
+	<section id="credits">
+		<h1>Credits</h1><hr class="notop">
+		<p>
+		We've used the following images, icons or other files as listed.</p>
+		<h3>JS File</h3>
+		<ul class="credit-list">
+			<li><span>Bootstrap -</span> Most popular HTML, CSS, and JS framework under MIT License</li>
+			<li><span>jQuery -</span> A fast, small, and feature-rich JavaScript library under MIT License</li>	
+			<li><span>Barcode reader -</span> under LGPLv3.</li>
+			<li><span>Moment.js - </span>Moment.js is freely distributable under the terms of the MIT license.</li>
+			<li><span>Bootstrap-timepicker -</span> 	Time picker widget based on bootstrap under Apache License V2</li>
+			<li><span>Bootstrap-Datepicker -</span> 	Date picker widget based on bootstrap under Apache License V2</li>
+			<li><span>Accounting.js - </span>	A tiny JavaScript library for number, money and currency formatting under MIT License</li>
+			<li><span>Angular JS-</span> Under MIT license</li>
+			<li><span>select2 -</span> Under MIT license</li>
+			<li><span>Jquery UI-</span>	Under MIT license</li>
+			<li><span>AdminLTE - </span>Under MIT license</li>
+			<li><span>toastr -</span>	Under MIT license</li>
+			<li><span>morrish -</span>	Under MIT license</li>
+			<li><span>Underscore JS -</span>Under MIT license</li>
+			<li><span>Filemanager JS -</span> 	Under MIT license</li>
+			<li><span>perfect scroll bar -</span>  	Under MIT license</li>
+			<li><span>Datatables jQuery Plugin-</span>Under MIT license</li>
+			<li><span>jQuery chart js-</span> 	Under MIT license</li>
+			<li><span>Bootstrap-wisi html5-</span> 	Under MIT license</li>
+		</ul>
+		<h3>PHP</h3>
+		<ul>
+			<li><span>PHP spreadsheet reader -</span> Under MIT license</li>
+			<li><span>ESC/POS print driver for PHP-</span> Under MIT license</li>
+			<li><span>PHP hooks-</span></li>
+			<li><span>PHP mailer-</span> Under the LGPL 2.1 license.</li>
+			<li><span>PHP barcode generator-</span> Under the LGPL 3 license.</li>
+			<li><span>PHP QR Code-</span> Under the LGPL</li>
+		</ul>
+		<h3>Other</h3>
+		<ul>
+			<li><span>Flaticon</span></li>
+			<li><span>Font Awesome -</span>The iconic font and CSS toolkit under GPL License.</li>
+			<li><span>animate css-</span> Under MIT license</li>
+			<li><span><a href="https://pixels.com/">Pixels.com</a> </span></li>
+			<li><span><a href="https://www.bensound.com/royalty-free-music">Background Music:</a>For vedio preview</span></li>
+			<li><span><a href="https://freesound.org">Audio sounds</a></span></li>
+		</ul>
+		<hr>
+		<p>
+		Once again, Thank you so much for purchasing this php script. As we said at the beginning, we'd be glad to help you if you have any questions relating to this theme. No guarantees, but we'll do our best to assist. If you have a more general question relating to the items on Codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+		<p>
+		<strong>ITsolution24.com</strong></p>
+	</section>
+	<!-- credit end -->
+	<section id="updates">
+		<h1>Update</h1><hr class="notop">
+		<p>For update you should follow the below step</p>
+		<ul>
+			<li>Copy the update files in your current directory.</li>
+			<li>Go to your project directory and run the command "Php artisan migrate"</li>
+			<li>Then you will get all the update features</li>
+		</ul>
+	</section>
+	</div>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

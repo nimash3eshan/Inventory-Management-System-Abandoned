@@ -1,0 +1,21 @@
+{
+  "I love programming.": "Me encanta programar.",
+  "Supplier": "Supplier",
+  "Suppliers": "Suppliers",
+  "Customer": "Customer",
+  "Customers": "Customers",
+  "Item": "Item",
+  "Employee": "Employee",
+  "Expenses": "Expenses",
+  "Expense": "Expense",
+  "Account": "Account",
+  "Accounts": "Accounts",
+  "Create Account": "Create Account",
+  "Transactions": "Transactions",
+  "Transaction": "Transaction",
+  "Dashboard": "Dashboard",
+  "Sales/Invoices": "Sales/Invoices",
+  "FLEXIBLEPOS v2.0": "FLEXIBLEPOS v5.6",
+  "Date": "Date",
+  "This Daily Report can't be deleted, Only last created report can be deleted!": "This Daily Report can't be deleted, Only last created report can be deleted!"
+}

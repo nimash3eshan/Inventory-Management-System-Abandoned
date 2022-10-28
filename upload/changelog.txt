@@ -1,0 +1,19 @@
+*** Changelog ***
+
+= 5.3 - 2021-09-01 =
+* Fix - Invoice add item can edit price.
+
+= 5.5 - 2021-12-02 =
+* Add - Category in the stock > item add/edit.
+* Fix - Navbar plus link going to right page.
+
+
+= 5.6 - 2022-01-02 =
+* Add - Attribute in the stock > Attribute add/edit.
+* Update - Attribute in invoice & receivings.
+
+
+
+
+
+
